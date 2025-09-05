@@ -1,0 +1,133 @@
+/* register.css - Create this file in your styles directory */
+
+.register-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    padding: 20px;
+    background-color: #f5f5f5;
+  }
+  
+  .register-card {
+    width: 100%;
+    max-width: 500px;
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    padding: 30px;
+  }
+  
+  .register-header {
+    margin-bottom: 24px;
+  }
+  
+  .register-header h1 {
+    font-size: 24px;
+    font-weight: 600;
+    margin-bottom: 8px;
+  }
+  
+  .register-header p {
+    color: #6b7280;
+    font-size: 16px;
+  }
+  
+  .register-form {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+  }
+  
+  .form-row {
+    display: flex;
+    gap: 16px;
+  }
+  
+  .form-group {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+  }
+  
+  .form-group label {
+    font-size: 14px;
+    font-weight: 500;
+    margin-bottom: 6px;
+  }
+  
+  .form-group input {
+    padding: 10px 12px;
+    border: 1px solid #d1d5db;
+    border-radius: 4px;
+    font-size: 16px;
+    transition: border-color 0.2s;
+  }
+  
+  .form-group input:focus {
+    outline: none;
+    border-color: #3b82f6;
+    box-shadow: 0 0 0 2px rgba(59, 130, 246, 0.2);
+  }
+  
+  .password-hint {
+    margin-top: 4px;
+    font-size: 12px;
+    color: #6b7280;
+  }
+  
+  .register-button {
+    margin-top: 8px;
+    padding: 12px;
+    background-color: #000;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    font-size: 16px;
+    font-weight: 500;
+    cursor: pointer;
+    transition: background-color 0.2s;
+  }
+  
+  .register-button:hover {
+    background-color: #1f2937;
+  }
+  
+  .register-button:disabled {
+    background-color: #9ca3af;
+    cursor: not-allowed;
+  }
+  
+  .login-link {
+    margin-top: 24px;
+    text-align: center;
+    padding-top: 16px;
+    border-top: 1px solid #e5e7eb;
+  }
+  
+  .login-link p {
+    color: #6b7280;
+    font-size: 14px;
+  }
+  
+  .login-link a {
+    color: #3b82f6;
+    text-decoration: none;
+    font-weight: 500;
+  }
+  
+  .login-link a:hover {
+    text-decoration: underline;
+  }
+  
+  /* Responsive adjustments */
+  @media (max-width: 640px) {
+    .form-row {
+      flex-direction: column;
+      gap: 16px;
+    }
+    
+    .register-card {
+      padding: 20px;
+    }
+  }
